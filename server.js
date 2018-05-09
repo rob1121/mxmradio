@@ -15,13 +15,16 @@ io.on('connection', function (socket) {
   io.emit('online_count', online_count);
 
   socket.on('new_message', function(data) {
-    io.sockets.emit( 'new_message', {
-    	name: data.name,
+    var address = socket.handshake.address;
+    io.sockets.emit('new_message', {
+      name: data.name,
+      address: address,
     	avatar: data.avatar,
-    	message: data.message,
-    	created_at: data.created_at,
+      message: data.message,
+      ipaddress: data.ipaddress,
+      created_at: data.created_at,
     	id: data.id
-    });
+    }); 
   });
 
   socket.on( 'new_feature', function(data) {

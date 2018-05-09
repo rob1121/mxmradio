@@ -37,7 +37,9 @@ class Chat extends MY_Controller {
 			$arr['name'] = $detail->name;
 			$arr['avatar'] = $detail->avatar;
 			$arr['message'] = $detail->message;
+			$arr['ipaddress'] = $detail->ipaddress;
 			$arr['created_at'] = $detail->created_at;
+			$arr['detail'] = $detail;
 			$arr['success'] = true;
 			// $arr['notif'] = '<div class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 alert alert-success" role="alert"> <i class="fa fa-check"></i><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Message sent ...</div>';
 		}

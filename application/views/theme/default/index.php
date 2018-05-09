@@ -6,7 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Anonymous Chat System</title>
         <link href="<?php echo base_url('assets/css/semantic.min.css');?>" rel="stylesheet">
+        <link href="<?php echo base_url('assets/css/jquery.emojiarea.css');?>" rel="stylesheet">
         <script src="<?php echo base_url('assets/js/jquery-1.11.2.min.js');?>"></script>
+        <script src="<?php echo base_url('assets/js/jquery.emojiarea.min.js');?>"></script>
+        <script src="<?php echo base_url('assets/js/emojis.js');?>"></script>
         <!-- <script src="https://raw.githubusercontent.com/rodrigopolo/jqueryemoji/master/js/jQueryEmoji.min.js"></script> -->
         <style>
         .ui.main.container{
